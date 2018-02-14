@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity delay_1seg is
+    port ( en_cnt,reset_cnt,clock: IN std_logic;
+			  
+			  ok_delay: OUT std_logic);
+end delay_1seg;
+
+architecture solucion of delay_1seg is
+
+    signal cnt:std_logic_vector(19 downto 0):= "00000000000000000000";
+	 
+    process (reset_cnt, clock)
+	    begin
+		 
+		 var<=data_out;
+		 
+		 if reset_cnt='0' then ok_delay<='0' and cnt<="00000000000000000000";
+		 elsif clock'event and clock='1' then
+		     cnt<=cnt+"0000000000000000001"		  
+			  
+		end if;
+		if cnt>"11110100001001000000" then ok_delay='1';
+		
+	end process;
+	
+end solucion;

@@ -1,0 +1,129 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+Slack : -18.605
+TNS   : -721.703
+
+Type  : Setup 'clock'
+Slack : -5.823
+TNS   : -28.812
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'
+Slack : -4.940
+TNS   : -17.755
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'
+Slack : -4.937
+TNS   : -18.642
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'
+Slack : -4.927
+TNS   : -18.444
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'
+Slack : -4.827
+TNS   : -17.356
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'
+Slack : -4.665
+TNS   : -17.794
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'
+Slack : -4.630
+TNS   : -18.068
+
+Type  : Setup 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+Slack : -3.914
+TNS   : -7.111
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'
+Slack : -4.195
+TNS   : -4.195
+
+Type  : Hold 'clock'
+Slack : -2.157
+TNS   : -4.314
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'
+Slack : -2.121
+TNS   : -2.121
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'
+Slack : -0.733
+TNS   : -0.733
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'
+Slack : -0.449
+TNS   : -0.449
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'
+Slack : -0.309
+TNS   : -0.309
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+Slack : 3.257
+TNS   : 0.000
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'
+Slack : 3.445
+TNS   : 0.000
+
+Type  : Hold 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+Slack : 3.837
+TNS   : 0.000
+
+Type  : Recovery 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+Slack : -8.228
+TNS   : -238.493
+
+Type  : Recovery 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+Slack : -4.950
+TNS   : -9.900
+
+Type  : Removal 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+Slack : 5.590
+TNS   : 0.000
+
+Type  : Removal 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+Slack : 6.190
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clock'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'
+Slack : 0.161
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,253 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OB",
+					"strict" : false
+				},
+				{
+					"name" : "OC",
+					"strict" : false
+				},
+				{
+					"name" : "OE",
+					"strict" : false
+				},
+				{
+					"name" : "OD",
+					"strict" : false
+				},
+				{
+					"name" : "OF",
+					"strict" : false
+				},
+				{
+					"name" : "OG",
+					"strict" : false
+				},
+				{
+					"name" : "OA",
+					"strict" : false
+				},
+				{
+					"name" : "OB10",
+					"strict" : false
+				},
+				{
+					"name" : "OC11",
+					"strict" : false
+				},
+				{
+					"name" : "OE12",
+					"strict" : false
+				},
+				{
+					"name" : "OD13",
+					"strict" : false
+				},
+				{
+					"name" : "OF14",
+					"strict" : false
+				},
+				{
+					"name" : "OG15",
+					"strict" : false
+				},
+				{
+					"name" : "OA16",
+					"strict" : false
+				},
+				{
+					"name" : "pin_name1",
+					"strict" : false
+				},
+				{
+					"name" : "PENDIENTE",
+					"strict" : false
+				},
+				{
+					"name" : "LED",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Q_SALI_REG_FREC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_m1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_conTador_frecuencia[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_conTador_frecuencia[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_conTador_frecuencia[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_conTador_frecuencia[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_conTador_frecuencia[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_conTador_frecuencia[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[7]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida_frecuencia_final[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SENSOR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "max",
+					"strict" : false
+				},
+				{
+					"name" : "min",
+					"strict" : false
+				},
+				{
+					"name" : "resetn",
+					"strict" : false
+				},
+				{
+					"name" : "promedio",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

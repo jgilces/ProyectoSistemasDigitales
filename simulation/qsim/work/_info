@@ -1,0 +1,257 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/josanpal/Documents/ESPOL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!/DIGITALES_2/proyec_simulacion_1/simulation/qsim
+Econtador_prueba
+Z1 w1515997540
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z11 8simulacion_1.vho
+Z12 Fsimulacion_1.vho
+l0
+L38
+VoikaOS]Yhgj^X:?6gQXgg1
+!s100 gnNMeFXamPE?6MezNfi<C0
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1515997543
+!i10b 1
+Z15 !s108 1515997542.000000
+Z16 !s90 -work|work|simulacion_1.vho|
+Z17 !s107 simulacion_1.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 15 contador_prueba 0 22 oikaOS]Yhgj^X:?6gQXgg1
+l90
+L59
+V8<UiY@8FAIdao=0P_ze2B0
+!s100 `UZPd[g;VT`U>JSbP=Kfb3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Econtador_prueba_vhd_vec_tst
+Z20 w1515997537
+R8
+R9
+R0
+Z21 8Waveform3.vwf.vht
+Z22 FWaveform3.vwf.vht
+l0
+L31
+V]W>mZCUoaSIRUGkcV;^F^0
+!s100 8Q2MBXHzO@klYT6TBG5MW2
+R13
+32
+R14
+!i10b 1
+Z23 !s108 1515997543.000000
+Z24 !s90 -work|work|Waveform3.vwf.vht|
+Z25 !s107 Waveform3.vwf.vht|
+!i113 1
+R18
+R19
+Acontador_prueba_arch
+R8
+R9
+DEx4 work 27 contador_prueba_vhd_vec_tst 0 22 ]W>mZCUoaSIRUGkcV;^F^0
+l48
+L33
+VjgacW@T@5WTUnFARm0gMZ1
+!s100 0N4jMi6nZV6Z8<[bi@ogA3
+R13
+32
+R14
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R18
+R19
+Eprueba_sost
+Z26 w1515995165
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R0
+R11
+R12
+l0
+L38
+VH^oNOVL18Jk]6d:1EbRoK0
+!s100 gd6jGbFjFOfHJ]]=>faK91
+R13
+32
+Z27 !s110 1515995168
+!i10b 1
+Z28 !s108 1515995167.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 11 prueba_sost 0 22 H^oNOVL18Jk]6d:1EbRoK0
+l108
+L70
+VP9mb10WH;iADGOmTezM^f1
+!s100 NoR9Ql<=95RUONCTPgIN]1
+R13
+32
+R27
+!i10b 1
+R28
+R16
+R17
+!i113 1
+R18
+R19
+Eprueba_sost_vhd_vec_tst
+Z29 w1515995161
+R8
+R9
+R0
+Z30 8Waveform2.vwf.vht
+Z31 FWaveform2.vwf.vht
+l0
+L31
+Vzh3NLOUN44[QgR0EV9;=d0
+!s100 3PkQlaOfF>425;4gKXW;]3
+R13
+32
+R27
+!i10b 1
+Z32 !s108 1515995168.000000
+Z33 !s90 -work|work|Waveform2.vwf.vht|
+Z34 !s107 Waveform2.vwf.vht|
+!i113 1
+R18
+R19
+Aprueba_sost_arch
+R8
+R9
+DEx4 work 23 prueba_sost_vhd_vec_tst 0 22 zh3NLOUN44[QgR0EV9;=d0
+l50
+L33
+VRURf9fShDlgM6h5MO]Y1K1
+!s100 _ijNi`MQLWo4>k1^KO1]>3
+R13
+32
+R27
+!i10b 1
+R32
+R33
+R34
+!i113 1
+R18
+R19
+vsimulacion_1
+Z35 !s110 1516692196
+!i10b 1
+!s100 LznK5=fMnAIWz][Q`<9981
+IJ:i?0A9RgcI6ih?6KX69F2
+Z36 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1516692194
+8simulacion_1.vo
+Fsimulacion_1.vo
+L0 31
+Z37 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z38 !s108 1516692196.000000
+!s107 simulacion_1.vo|
+!s90 -work|work|simulacion_1.vo|
+!i113 1
+R18
+Z39 tCvgOpt 0
+Esimulacion_1_vhd_vec_tst
+w1516287934
+R8
+R9
+R0
+8Waveform4.vwf.vht
+FWaveform4.vwf.vht
+l0
+L31
+V?SARz2L8ZRdm`lAi6c6@X3
+!s100 Gd[nI3^PiEaXA4P0eQRb@2
+R13
+32
+!s110 1516287943
+!i10b 1
+!s108 1516287943.000000
+!s90 -work|work|Waveform4.vwf.vht|
+!s107 Waveform4.vwf.vht|
+!i113 1
+R18
+R19
+vsimulacion_1_vlg_vec_tst
+R35
+!i10b 1
+!s100 mKMDJ2C93I`BHM1OD9Okf1
+I1hAlRO15_3SE:?A5[inF82
+R36
+R0
+w1516692191
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+L0 29
+R37
+r1
+!s85 0
+31
+R38
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R18
+R39

@@ -1,0 +1,1183 @@
+TimeQuest Timing Analyzer report for simulacion_1
+Wed Feb 14 15:06:02 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+ 12. Setup: 'clock'
+ 13. Setup: 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'
+ 14. Setup: 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'
+ 15. Setup: 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'
+ 16. Setup: 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'
+ 17. Setup: 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'
+ 18. Setup: 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'
+ 19. Setup: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+ 20. Hold: 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'
+ 21. Hold: 'clock'
+ 22. Hold: 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'
+ 23. Hold: 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'
+ 24. Hold: 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'
+ 25. Hold: 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'
+ 26. Hold: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+ 27. Hold: 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'
+ 28. Hold: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+ 29. Recovery: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+ 30. Recovery: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+ 31. Removal: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'
+ 32. Removal: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'
+ 33. Setup Transfers
+ 34. Hold Transfers
+ 35. Recovery Transfers
+ 36. Removal Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths Summary
+ 40. Clock Status Summary
+ 41. Unconstrained Input Ports
+ 42. Unconstrained Output Ports
+ 43. Unconstrained Input Ports
+ 44. Unconstrained Output Ports
+ 45. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                               ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
+; Timing Analyzer       ; TimeQuest                                               ;
+; Revision Name         ; simulacion_1                                            ;
+; Device Family         ; MAX V                                                   ;
+; Device Name           ; 5M570ZF256C5                                            ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Slow Model                                              ;
+; Rise/Fall Delays      ; Unavailable                                             ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                             ;
++------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
+; Clock Name                               ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                      ;
++------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
+; clock                                    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock }                                    ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz }        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|clock_1Khz_int }   ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int }   ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|clock_10hz_int }   ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|clock_10Khz_int }  ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz }      ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|clock_100hz_int }  ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_DIV_10_MHz:inst11|clock_100Khz_int } ;
++------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Fmax Summary                                                                   ;
++------------+-----------------+------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                               ; Note ;
++------------+-----------------+------------------------------------------+------+
+; 51.01 MHz  ; 51.01 MHz       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ;      ;
+; 146.56 MHz ; 146.56 MHz      ; clock                                    ;      ;
+; 168.35 MHz ; 168.35 MHz      ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ;      ;
+; 168.44 MHz ; 168.44 MHz      ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ;      ;
+; 168.72 MHz ; 168.72 MHz      ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ;      ;
+; 171.61 MHz ; 171.61 MHz      ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ;      ;
+; 176.52 MHz ; 176.52 MHz      ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ;      ;
+; 177.62 MHz ; 177.62 MHz      ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ;      ;
+; 203.5 MHz  ; 203.5 MHz       ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ;      ;
++------------+-----------------+------------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------------+
+; Setup Summary                                                      ;
++------------------------------------------+---------+---------------+
+; Clock                                    ; Slack   ; End Point TNS ;
++------------------------------------------+---------+---------------+
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; -18.605 ; -721.703      ;
+; clock                                    ; -5.823  ; -28.812       ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; -4.940  ; -17.755       ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; -4.937  ; -18.642       ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; -4.927  ; -18.444       ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; -4.827  ; -17.356       ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; -4.665  ; -17.794       ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; -4.630  ; -18.068       ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; -3.914  ; -7.111        ;
++------------------------------------------+---------+---------------+
+
+
++-------------------------------------------------------------------+
+; Hold Summary                                                      ;
++------------------------------------------+--------+---------------+
+; Clock                                    ; Slack  ; End Point TNS ;
++------------------------------------------+--------+---------------+
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; -4.195 ; -4.195        ;
+; clock                                    ; -2.157 ; -4.314        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; -2.121 ; -2.121        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; -0.733 ; -0.733        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; -0.449 ; -0.449        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; -0.309 ; -0.309        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; 3.257  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; 3.445  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; 3.837  ; 0.000         ;
++------------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------+
+; Recovery Summary                                             ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; -8.228 ; -238.493      ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; -4.950 ; -9.900        ;
++-------------------------------------+--------+---------------+
+
+
++-------------------------------------------------------------+
+; Removal Summary                                             ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; 5.590 ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 6.190 ; 0.000         ;
++-------------------------------------+-------+---------------+
+
+
++-------------------------------------------------------------------+
+; Minimum Pulse Width Summary                                       ;
++------------------------------------------+--------+---------------+
+; Clock                                    ; Slack  ; End Point TNS ;
++------------------------------------------+--------+---------------+
+; clock                                    ; -2.289 ; -2.289        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; 0.161  ; 0.000         ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; 0.161  ; 0.000         ;
++------------------------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'                                                                                                                                                               ;
++---------+--------------------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack   ; From Node                            ; To Node                              ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++---------+--------------------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; -18.605 ; reg_sostenimiento:inst42|data_out[2] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 19.284     ;
+; -18.370 ; reg_sostenimiento:inst42|data_out[0] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 19.049     ;
+; -18.103 ; reg_sostenimiento:inst42|data_out[5] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.782     ;
+; -17.910 ; reg_sostenimiento:inst42|data_out[2] ; PROYECTO_MSS:inst|y.s7               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.589     ;
+; -17.826 ; reg_sostenimiento:inst18|data_out[6] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.505     ;
+; -17.826 ; reg_sostenimiento:inst18|data_out[6] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.505     ;
+; -17.826 ; reg_sostenimiento:inst18|data_out[6] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.505     ;
+; -17.826 ; reg_sostenimiento:inst18|data_out[6] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.505     ;
+; -17.826 ; reg_sostenimiento:inst18|data_out[6] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.505     ;
+; -17.675 ; reg_sostenimiento:inst42|data_out[0] ; PROYECTO_MSS:inst|y.s7               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.354     ;
+; -17.553 ; reg_sostenimiento:inst42|data_out[3] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.232     ;
+; -17.542 ; PROYECTO_MSS:inst|y.s0               ; PROYECTO_MSS:inst|y.s18              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.221     ;
+; -17.408 ; reg_sostenimiento:inst42|data_out[5] ; PROYECTO_MSS:inst|y.s7               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.087     ;
+; -17.402 ; reg_sostenimiento:inst27|data_out[3] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.081     ;
+; -17.395 ; reg_sostenimiento:inst27|data_out[3] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.074     ;
+; -17.321 ; reg_sostenimiento:inst42|data_out[4] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 18.000     ;
+; -16.876 ; reg_sostenimiento:inst42|data_out[1] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.555     ;
+; -16.858 ; reg_sostenimiento:inst42|data_out[3] ; PROYECTO_MSS:inst|y.s7               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.537     ;
+; -16.814 ; reg_sostenimiento:inst42|data_out[2] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.493     ;
+; -16.626 ; reg_sostenimiento:inst42|data_out[4] ; PROYECTO_MSS:inst|y.s7               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.305     ;
+; -16.579 ; reg_sostenimiento:inst42|data_out[0] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.258     ;
+; -16.547 ; reg_sostenimiento:inst52|data_out[3] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.226     ;
+; -16.540 ; reg_sostenimiento:inst52|data_out[3] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.219     ;
+; -16.518 ; reg_sostenimiento:inst18|data_out[3] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.197     ;
+; -16.518 ; reg_sostenimiento:inst18|data_out[3] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.197     ;
+; -16.518 ; reg_sostenimiento:inst18|data_out[3] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.197     ;
+; -16.518 ; reg_sostenimiento:inst18|data_out[3] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.197     ;
+; -16.518 ; reg_sostenimiento:inst18|data_out[3] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.197     ;
+; -16.434 ; reg_sostenimiento:inst27|data_out[4] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.113     ;
+; -16.427 ; reg_sostenimiento:inst27|data_out[4] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 17.106     ;
+; -16.312 ; reg_sostenimiento:inst42|data_out[5] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.991     ;
+; -16.238 ; reg_sostenimiento:inst27|data_out[2] ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.917     ;
+; -16.238 ; reg_sostenimiento:inst27|data_out[2] ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.917     ;
+; -16.238 ; reg_sostenimiento:inst27|data_out[2] ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.917     ;
+; -16.230 ; reg_sostenimiento:inst18|data_out[2] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.909     ;
+; -16.230 ; reg_sostenimiento:inst18|data_out[2] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.909     ;
+; -16.230 ; reg_sostenimiento:inst18|data_out[2] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.909     ;
+; -16.230 ; reg_sostenimiento:inst18|data_out[2] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.909     ;
+; -16.230 ; reg_sostenimiento:inst18|data_out[2] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.909     ;
+; -16.228 ; reg_sostenimiento:inst18|data_out[4] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.907     ;
+; -16.228 ; reg_sostenimiento:inst18|data_out[4] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.907     ;
+; -16.228 ; reg_sostenimiento:inst18|data_out[4] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.907     ;
+; -16.228 ; reg_sostenimiento:inst18|data_out[4] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.907     ;
+; -16.228 ; reg_sostenimiento:inst18|data_out[4] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.907     ;
+; -16.181 ; reg_sostenimiento:inst42|data_out[1] ; PROYECTO_MSS:inst|y.s7               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.860     ;
+; -15.993 ; reg_sostenimiento:inst18|data_out[0] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.672     ;
+; -15.993 ; reg_sostenimiento:inst18|data_out[0] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.672     ;
+; -15.993 ; reg_sostenimiento:inst18|data_out[0] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.672     ;
+; -15.993 ; reg_sostenimiento:inst18|data_out[0] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.672     ;
+; -15.993 ; reg_sostenimiento:inst18|data_out[0] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.672     ;
+; -15.940 ; reg_sostenimiento:inst27|data_out[0] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.619     ;
+; -15.933 ; reg_sostenimiento:inst27|data_out[0] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.612     ;
+; -15.787 ; reg_sostenimiento:inst52|data_out[5] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.466     ;
+; -15.780 ; reg_sostenimiento:inst52|data_out[5] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.459     ;
+; -15.762 ; reg_sostenimiento:inst42|data_out[3] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.441     ;
+; -15.694 ; reg_sostenimiento:inst18|data_out[5] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.373     ;
+; -15.694 ; reg_sostenimiento:inst18|data_out[5] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.373     ;
+; -15.694 ; reg_sostenimiento:inst18|data_out[5] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.373     ;
+; -15.694 ; reg_sostenimiento:inst18|data_out[5] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.373     ;
+; -15.694 ; reg_sostenimiento:inst18|data_out[5] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.373     ;
+; -15.682 ; reg_sostenimiento:inst18|data_out[2] ; PROYECTO_MSS:inst|y.s11              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.361     ;
+; -15.681 ; reg_sostenimiento:inst18|data_out[2] ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.360     ;
+; -15.680 ; reg_sostenimiento:inst18|data_out[2] ; PROYECTO_MSS:inst|y.s12              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.359     ;
+; -15.677 ; reg_sostenimiento:inst18|data_out[2] ; PROYECTO_MSS:inst|y.s13              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.356     ;
+; -15.664 ; reg_sostenimiento:inst27|data_out[1] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.343     ;
+; -15.657 ; reg_sostenimiento:inst27|data_out[1] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.336     ;
+; -15.619 ; reg_sostenimiento:inst27|data_out[2] ; reg_sostenimiento:inst42|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.298     ;
+; -15.530 ; reg_sostenimiento:inst42|data_out[4] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.209     ;
+; -15.497 ; reg_sostenimiento:inst42|data_out[4] ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.176     ;
+; -15.497 ; reg_sostenimiento:inst42|data_out[4] ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.176     ;
+; -15.497 ; reg_sostenimiento:inst42|data_out[4] ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 16.176     ;
+; -15.318 ; reg_sostenimiento:inst18|data_out[1] ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.997     ;
+; -15.318 ; reg_sostenimiento:inst18|data_out[1] ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.997     ;
+; -15.318 ; reg_sostenimiento:inst18|data_out[1] ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.997     ;
+; -15.318 ; reg_sostenimiento:inst18|data_out[1] ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.997     ;
+; -15.318 ; reg_sostenimiento:inst18|data_out[1] ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.997     ;
+; -15.260 ; reg_sostenimiento:inst42|data_out[5] ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.939     ;
+; -15.260 ; reg_sostenimiento:inst42|data_out[5] ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.939     ;
+; -15.260 ; reg_sostenimiento:inst42|data_out[5] ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.939     ;
+; -15.221 ; reg_sostenimiento:inst27|data_out[3] ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.900     ;
+; -15.221 ; reg_sostenimiento:inst27|data_out[3] ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.900     ;
+; -15.221 ; reg_sostenimiento:inst27|data_out[3] ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.900     ;
+; -15.128 ; reg_sostenimiento:inst27|data_out[1] ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.807     ;
+; -15.128 ; reg_sostenimiento:inst27|data_out[1] ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.807     ;
+; -15.128 ; reg_sostenimiento:inst27|data_out[1] ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.807     ;
+; -15.115 ; reg_sostenimiento:inst18|data_out[4] ; PROYECTO_MSS:inst|y.s11              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.794     ;
+; -15.114 ; reg_sostenimiento:inst18|data_out[4] ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.793     ;
+; -15.113 ; reg_sostenimiento:inst18|data_out[4] ; PROYECTO_MSS:inst|y.s12              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.792     ;
+; -15.110 ; reg_sostenimiento:inst18|data_out[4] ; PROYECTO_MSS:inst|y.s13              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.789     ;
+; -15.085 ; reg_sostenimiento:inst42|data_out[1] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.764     ;
+; -15.066 ; reg_sostenimiento:inst18|data_out[5] ; PROYECTO_MSS:inst|y.s11              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.745     ;
+; -15.065 ; reg_sostenimiento:inst18|data_out[5] ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.744     ;
+; -15.064 ; reg_sostenimiento:inst18|data_out[5] ; PROYECTO_MSS:inst|y.s12              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.743     ;
+; -15.061 ; reg_sostenimiento:inst18|data_out[5] ; PROYECTO_MSS:inst|y.s13              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.740     ;
+; -15.015 ; PROYECTO_MSS:inst|y.s1               ; PROYECTO_MSS:inst|y.s18              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.694     ;
+; -15.000 ; reg_sostenimiento:inst27|data_out[2] ; PROYECTO_MSS:inst|y.s9               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.679     ;
+; -14.993 ; reg_sostenimiento:inst27|data_out[2] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.672     ;
+; -14.952 ; reg_sostenimiento:inst42|data_out[1] ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.631     ;
+; -14.952 ; reg_sostenimiento:inst42|data_out[1] ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.631     ;
+; -14.952 ; reg_sostenimiento:inst42|data_out[1] ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 15.631     ;
++---------+--------------------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clock'                                                                                                                                                                               ;
++--------+------------------------------------------+----------------------------------------+------------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                ; Launch Clock                             ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+----------------------------------------+------------------------------------------+-------------+--------------+------------+------------+
+; -5.823 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 6.502      ;
+; -4.935 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 5.614      ;
+; -4.925 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 5.604      ;
+; -4.746 ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int    ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz      ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; clock       ; 1.000        ; -2.228     ; 3.197      ;
+; -4.730 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 5.409      ;
+; -4.666 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 5.345      ;
+; -4.650 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 5.329      ;
+; -4.649 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 5.328      ;
+; -3.796 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 4.475      ;
+; -3.734 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; clock                                    ; clock       ; 1.000        ; 0.000      ; 4.413      ;
+; -3.257 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.936      ;
+; -3.253 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.932      ;
+; -3.250 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.929      ;
+; -3.247 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.926      ;
+; -3.234 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.913      ;
+; -2.866 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.545      ;
+; -2.865 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.544      ;
+; -2.851 ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 1.000        ; 0.000      ; 3.530      ;
+; 2.297  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|CLOCK_100KHz   ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; clock       ; 0.500        ; 4.832      ; 3.208      ;
+; 2.297  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz    ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; clock       ; 0.500        ; 4.832      ; 3.208      ;
+; 2.797  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|CLOCK_100KHz   ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; clock       ; 1.000        ; 4.832      ; 3.208      ;
+; 2.797  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz    ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; clock       ; 1.000        ; 4.832      ; 3.208      ;
++--------+------------------------------------------+----------------------------------------+------------------------------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -4.940 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 5.619      ;
+; -4.939 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 5.618      ;
+; -4.632 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 5.311      ;
+; -3.252 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.931      ;
+; -3.244 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.923      ;
+; -3.153 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.832      ;
+; -3.151 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.830      ;
+; -2.862 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.541      ;
+; -2.860 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.539      ;
+; -2.851 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.530      ;
+; -2.851 ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 0.000      ; 3.530      ;
+; 4.335  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.500        ; 9.143      ; 5.481      ;
+; 4.835  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 1.000        ; 9.143      ; 5.481      ;
++--------+-----------------------------------------+-----------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'                                                                                                                                                                      ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -4.937 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 5.616      ;
+; -4.935 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 5.614      ;
+; -4.931 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 5.610      ;
+; -4.687 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 5.366      ;
+; -4.156 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 4.835      ;
+; -3.839 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 4.518      ;
+; -3.837 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 4.516      ;
+; -3.246 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 3.925      ;
+; -3.226 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 3.905      ;
+; -3.223 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 3.902      ;
+; -2.813 ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 0.000      ; 3.492      ;
+; 0.873  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.500        ; 3.678      ; 3.478      ;
+; 1.373  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 1.000        ; 3.678      ; 3.478      ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'                                                                                                                                                                           ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                            ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+----------------------------------------+--------------+------------+------------+
+; -4.927 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 5.606      ;
+; -4.705 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 5.384      ;
+; -4.702 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 5.381      ;
+; -4.699 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 5.378      ;
+; -4.116 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 4.795      ;
+; -3.794 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 4.473      ;
+; -3.240 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 3.919      ;
+; -3.233 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 3.912      ;
+; -2.787 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 3.466      ;
+; -2.774 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 3.453      ;
+; -2.772 ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 0.000      ; 3.451      ;
+; 0.589  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.500        ; 3.756      ; 3.840      ;
+; 1.089  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 1.000        ; 3.756      ; 3.840      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'                                                                                                                                                                   ;
++--------+---------------------------------------+---------------------------------------+----------------------------------------+----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                             ; To Node                               ; Launch Clock                           ; Latch Clock                            ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------+---------------------------------------+----------------------------------------+----------------------------------------+--------------+------------+------------+
+; -4.827 ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 5.506      ;
+; -4.680 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 5.359      ;
+; -4.662 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 5.341      ;
+; -4.661 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 5.340      ;
+; -3.785 ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 4.464      ;
+; -3.188 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.867      ;
+; -3.177 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.856      ;
+; -3.150 ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.829      ;
+; -3.149 ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.828      ;
+; -2.809 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.488      ;
+; -2.809 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.488      ;
+; -2.805 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 1.000        ; 0.000      ; 3.484      ;
++--------+---------------------------------------+---------------------------------------+----------------------------------------+----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'                                                                                                                                                                      ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -4.665 ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 5.344      ;
+; -4.663 ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 5.342      ;
+; -4.662 ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 5.341      ;
+; -4.116 ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 4.795      ;
+; -3.804 ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 4.483      ;
+; -3.804 ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 4.483      ;
+; -3.177 ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 3.856      ;
+; -3.129 ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 3.808      ;
+; -3.127 ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 3.806      ;
+; -2.744 ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 3.423      ;
+; -2.742 ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 0.000      ; 3.421      ;
+; 0.449  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.500        ; 5.231      ; 5.455      ;
+; 0.949  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 1.000        ; 5.231      ; 5.455      ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'                                                                                                                                                                        ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                            ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+----------------------------------------+--------------+------------+------------+
+; -4.630 ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 5.309      ;
+; -4.630 ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 5.309      ;
+; -4.629 ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 5.308      ;
+; -4.179 ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 4.858      ;
+; -3.188 ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.867      ;
+; -3.188 ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.867      ;
+; -3.171 ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.850      ;
+; -2.816 ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.495      ;
+; -2.814 ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.493      ;
+; -2.811 ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.490      ;
+; -2.810 ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 0.000      ; 3.489      ;
+; 2.261  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.500        ; 7.104      ; 5.516      ;
+; 2.761  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 1.000        ; 7.104      ; 5.516      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+----------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'                                                                                                                                    ;
++--------+--------------------------+--------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                  ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; -3.914 ; delay_1seg:inst12|cnt[1] ; delay_1seg:inst12|cnt[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 1.000        ; 0.000      ; 4.593      ;
+; -3.201 ; delay_1seg:inst12|cnt[0] ; delay_1seg:inst12|cnt[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 1.000        ; 0.000      ; 3.880      ;
+; -3.197 ; delay_1seg:inst12|cnt[0] ; delay_1seg:inst12|cnt[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 1.000        ; 0.000      ; 3.876      ;
++--------+--------------------------+--------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|clock_100Khz_int'                                                                                                                                                                          ;
++--------+-----------------------------------------+-----------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                             ; Latch Clock                              ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+; -4.195 ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 9.143      ; 5.481      ;
+; -3.695 ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; -0.500       ; 9.143      ; 5.481      ;
+; 3.491  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.530      ;
+; 3.491  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.530      ;
+; 3.500  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.539      ;
+; 3.502  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.541      ;
+; 3.791  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.830      ;
+; 3.793  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.832      ;
+; 3.884  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.923      ;
+; 3.892  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 3.931      ;
+; 5.272  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 5.311      ;
+; 5.579  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 5.618      ;
+; 5.580  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0.000        ; 0.000      ; 5.619      ;
++--------+-----------------------------------------+-----------------------------------------+------------------------------------------+------------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clock'                                                                                                                                                                                ;
++--------+------------------------------------------+----------------------------------------+------------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                ; Launch Clock                             ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+----------------------------------------+------------------------------------------+-------------+--------------+------------+------------+
+; -2.157 ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|CLOCK_100KHz   ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; clock       ; 0.000        ; 4.832      ; 3.208      ;
+; -2.157 ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz    ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; clock       ; 0.000        ; 4.832      ; 3.208      ;
+; -1.657 ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|CLOCK_100KHz   ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; clock       ; -0.500       ; 4.832      ; 3.208      ;
+; -1.657 ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz    ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; clock       ; -0.500       ; 4.832      ; 3.208      ;
+; 3.491  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.530      ;
+; 3.505  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.544      ;
+; 3.506  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.545      ;
+; 3.874  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.913      ;
+; 3.887  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.926      ;
+; 3.890  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.929      ;
+; 3.893  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.932      ;
+; 3.897  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 3.936      ;
+; 4.374  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; clock                                    ; clock       ; 0.000        ; 0.000      ; 4.413      ;
+; 4.436  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 4.475      ;
+; 5.289  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 5.328      ;
+; 5.290  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 5.329      ;
+; 5.306  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 5.345      ;
+; 5.370  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 5.409      ;
+; 5.386  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int    ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz      ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; clock       ; 0.000        ; -2.228     ; 3.197      ;
+; 5.565  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[0]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 5.604      ;
+; 5.575  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[2]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 5.614      ;
+; 6.463  ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[1]    ; CLOCK_DIV_10_MHz:inst11|count_1Mhz[3]  ; clock                                    ; clock       ; 0.000        ; 0.000      ; 6.502      ;
++--------+------------------------------------------+----------------------------------------+------------------------------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|clock_1Khz_int'                                                                                                                                                                         ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                               ; To Node                                 ; Launch Clock                            ; Latch Clock                            ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+----------------------------------------+--------------+------------+------------+
+; -2.121 ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 7.104      ; 5.516      ;
+; -1.621 ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; -0.500       ; 7.104      ; 5.516      ;
+; 3.450  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.489      ;
+; 3.451  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.490      ;
+; 3.454  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.493      ;
+; 3.456  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.495      ;
+; 3.811  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.850      ;
+; 3.828  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.867      ;
+; 3.828  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 3.867      ;
+; 4.819  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 4.858      ;
+; 5.269  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 5.308      ;
+; 5.270  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 5.309      ;
+; 5.270  ; CLOCK_DIV_10_MHz:inst11|count_100hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; 0.000        ; 0.000      ; 5.309      ;
++--------+-----------------------------------------+-----------------------------------------+-----------------------------------------+----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|clock_10Khz_int'                                                                                                                                                                       ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.733 ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 3.678      ; 3.478      ;
+; -0.233 ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; -0.500       ; 3.678      ; 3.478      ;
+; 3.453  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 3.492      ;
+; 3.863  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 3.902      ;
+; 3.866  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 3.905      ;
+; 3.886  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 3.925      ;
+; 4.477  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 4.516      ;
+; 4.479  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 4.518      ;
+; 4.796  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 4.835      ;
+; 5.327  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 5.366      ;
+; 5.571  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 5.610      ;
+; 5.575  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 5.614      ;
+; 5.577  ; CLOCK_DIV_10_MHz:inst11|count_1Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int ; 0.000        ; 0.000      ; 5.616      ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                             ; Latch Clock                            ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+----------------------------------------+--------------+------------+------------+
+; -0.449 ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 3.756      ; 3.840      ;
+; 0.051  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; -0.500       ; 3.756      ; 3.840      ;
+; 3.412  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 3.451      ;
+; 3.414  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 3.453      ;
+; 3.427  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 3.466      ;
+; 3.873  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 3.912      ;
+; 3.880  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 3.919      ;
+; 4.434  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 4.473      ;
+; 4.756  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 4.795      ;
+; 5.339  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 5.378      ;
+; 5.342  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 5.381      ;
+; 5.345  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 5.384      ;
+; 5.567  ; CLOCK_DIV_10_MHz:inst11|count_100Khz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int ; 0.000        ; 0.000      ; 5.606      ;
++--------+------------------------------------------+------------------------------------------+------------------------------------------+----------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|clock_100hz_int'                                                                                                                                                                       ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock                            ; Latch Clock                             ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+; -0.309 ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 5.231      ; 5.455      ;
+; 0.191  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; -0.500       ; 5.231      ; 5.455      ;
+; 3.382  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 3.421      ;
+; 3.384  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 3.423      ;
+; 3.767  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 3.806      ;
+; 3.769  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 3.808      ;
+; 3.817  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 3.856      ;
+; 4.444  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 4.483      ;
+; 4.444  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 4.483      ;
+; 4.756  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 4.795      ;
+; 5.302  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 5.341      ;
+; 5.303  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 5.342      ;
+; 5.305  ; CLOCK_DIV_10_MHz:inst11|count_10hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_10hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int ; 0.000        ; 0.000      ; 5.344      ;
++--------+----------------------------------------+----------------------------------------+-----------------------------------------+-----------------------------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'                                                                                                                                                              ;
++-------+--------------------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 3.257 ; delay_1seg:inst12|cnt[0]             ; PROYECTO_MSS:inst|y.s5               ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.580      ; 3.876      ;
+; 3.376 ; contador_6b:inst22|data_out[5]       ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.415      ;
+; 3.376 ; ANTIREBOTE:inst21|SHIFT_PB[2]        ; ANTIREBOTE:inst21|SHIFT_PB[1]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.415      ;
+; 3.379 ; ANTIREBOTE:inst23|SHIFT_PB[3]        ; ANTIREBOTE:inst23|SHIFT_PB[2]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.418      ;
+; 3.381 ; ANTIREBOTE:inst25|SHIFT_PB[1]        ; ANTIREBOTE:inst25|SHIFT_PB[0]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.420      ;
+; 3.383 ; PROYECTO_MSS:inst|y.s1               ; PROYECTO_MSS:inst|y.s2               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.422      ;
+; 3.383 ; PROYECTO_MSS:inst|y.s1               ; PROYECTO_MSS:inst|y.s1               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.422      ;
+; 3.398 ; PROYECTO_MSS:inst|y.s21              ; PROYECTO_MSS:inst|y.s21              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.437      ;
+; 3.402 ; ANTIREBOTE:inst23|SHIFT_PB[2]        ; ANTIREBOTE:inst23|SHIFT_PB[1]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.441      ;
+; 3.405 ; ANTIREBOTE:inst25|SHIFT_PB[3]        ; ANTIREBOTE:inst25|SHIFT_PB[2]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.444      ;
+; 3.406 ; ANTIREBOTE:inst25|SHIFT_PB[2]        ; ANTIREBOTE:inst25|SHIFT_PB[1]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.445      ;
+; 3.407 ; ANTIREBOTE:inst21|SHIFT_PB[3]        ; ANTIREBOTE:inst21|SHIFT_PB[2]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.446      ;
+; 3.409 ; ANTIREBOTE:inst23|SHIFT_PB[1]        ; ANTIREBOTE:inst23|SHIFT_PB[0]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.448      ;
+; 3.410 ; ANTIREBOTE:inst21|SHIFT_PB[1]        ; ANTIREBOTE:inst21|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.449      ;
+; 3.411 ; ANTIREBOTE:inst21|SHIFT_PB[1]        ; ANTIREBOTE:inst21|SHIFT_PB[0]        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.450      ;
+; 3.412 ; ANTIREBOTE:inst25|SHIFT_PB[2]        ; ANTIREBOTE:inst25|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.451      ;
+; 3.414 ; ANTIREBOTE:inst23|SHIFT_PB[1]        ; ANTIREBOTE:inst23|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.453      ;
+; 3.740 ; ANTIREBOTE:inst25|SHIFT_PB[0]        ; ANTIREBOTE:inst25|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.779      ;
+; 3.740 ; reg_sostenimiento:inst27|data_out[1] ; reg_sostenimiento:inst27|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.779      ;
+; 3.740 ; ANTIREBOTE:inst21|SHIFT_PB[0]        ; ANTIREBOTE:inst21|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.779      ;
+; 3.743 ; ANTIREBOTE:inst23|SHIFT_PB[0]        ; ANTIREBOTE:inst23|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.782      ;
+; 3.815 ; PROYECTO_MSS:inst|y.s19              ; PROYECTO_MSS:inst|y.s19              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.854      ;
+; 3.852 ; PROYECTO_MSS:inst|y.s18              ; PROYECTO_MSS:inst|y.s21              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.891      ;
+; 3.853 ; PROYECTO_MSS:inst|y.s18              ; PROYECTO_MSS:inst|y.s16              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 3.892      ;
+; 3.982 ; delay_1seg:inst12|cnt[1]             ; PROYECTO_MSS:inst|y.s5               ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.580      ; 4.601      ;
+; 4.295 ; delay_1seg:inst12|cnt[1]             ; PROYECTO_MSS:inst|y.s10              ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.580      ; 4.914      ;
+; 4.343 ; delay_1seg:inst12|cnt[0]             ; PROYECTO_MSS:inst|y.s15              ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.580      ; 4.962      ;
+; 4.806 ; delay_1seg:inst12|cnt[1]             ; PROYECTO_MSS:inst|y.s15              ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.580      ; 5.425      ;
+; 4.835 ; PROYECTO_MSS:inst|y.s15              ; PROYECTO_MSS:inst|y.s15              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 4.874      ;
+; 4.957 ; PROYECTO_MSS:inst|y.s0               ; PROYECTO_MSS:inst|y.s1               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 4.996      ;
+; 4.973 ; PROYECTO_MSS:inst|y.s16              ; PROYECTO_MSS:inst|y.s17              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.012      ;
+; 4.980 ; PROYECTO_MSS:inst|y.s16              ; PROYECTO_MSS:inst|y.s20              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.019      ;
+; 5.217 ; PROYECTO_MSS:inst|y.s7               ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.256      ;
+; 5.241 ; contador_6b:inst22|data_out[3]       ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.280      ;
+; 5.254 ; ANTIREBOTE:inst25|SHIFT_PB[1]        ; ANTIREBOTE:inst25|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.293      ;
+; 5.254 ; PROYECTO_MSS:inst|y.s0               ; PROYECTO_MSS:inst|y.s0               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.293      ;
+; 5.273 ; PROYECTO_MSS:inst|y.s16              ; PROYECTO_MSS:inst|y.s18              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.312      ;
+; 5.280 ; ANTIREBOTE:inst23|SHIFT_PB[2]        ; ANTIREBOTE:inst23|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.319      ;
+; 5.281 ; ANTIREBOTE:inst21|SHIFT_PB[3]        ; ANTIREBOTE:inst21|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.320      ;
+; 5.309 ; PROYECTO_MSS:inst|y.s17              ; PROYECTO_MSS:inst|y.s17              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.348      ;
+; 5.431 ; contador_6b:inst22|data_out[4]       ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.470      ;
+; 5.441 ; contador_6b:inst22|data_out[1]       ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.480      ;
+; 5.441 ; contador_6b:inst22|data_out[2]       ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.480      ;
+; 5.450 ; ANTIREBOTE:inst23|SHIFT_PB[3]        ; ANTIREBOTE:inst23|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.489      ;
+; 5.450 ; ANTIREBOTE:inst21|SHIFT_PB[2]        ; ANTIREBOTE:inst21|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.489      ;
+; 5.475 ; PROYECTO_MSS:inst|y.s4               ; PROYECTO_MSS:inst|y.s5               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.514      ;
+; 5.477 ; PROYECTO_MSS:inst|y.s12              ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.516      ;
+; 5.477 ; ANTIREBOTE:inst25|SHIFT_PB[3]        ; ANTIREBOTE:inst25|PB_SIN_REBOTE      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.516      ;
+; 5.478 ; PROYECTO_MSS:inst|y.s5               ; PROYECTO_MSS:inst|y.s15              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.517      ;
+; 5.480 ; PROYECTO_MSS:inst|y.s12              ; PROYECTO_MSS:inst|y.s13              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.519      ;
+; 5.481 ; PROYECTO_MSS:inst|y.s13              ; PROYECTO_MSS:inst|y.s12              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.520      ;
+; 5.484 ; PROYECTO_MSS:inst|y.s4               ; PROYECTO_MSS:inst|y.s10              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.523      ;
+; 5.484 ; PROYECTO_MSS:inst|y.s5               ; PROYECTO_MSS:inst|y.s6               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.523      ;
+; 5.542 ; PROYECTO_MSS:inst|y.s20              ; PROYECTO_MSS:inst|y.s20              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.581      ;
+; 5.766 ; PROYECTO_MSS:inst|y.s18              ; PROYECTO_MSS:inst|y.s18              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.805      ;
+; 5.879 ; PROYECTO_MSS:inst|y.s7               ; reg_sostenimiento:inst51|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.918      ;
+; 5.879 ; PROYECTO_MSS:inst|y.s7               ; reg_sostenimiento:inst51|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.918      ;
+; 5.879 ; PROYECTO_MSS:inst|y.s7               ; reg_sostenimiento:inst51|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.918      ;
+; 5.879 ; PROYECTO_MSS:inst|y.s7               ; reg_sostenimiento:inst51|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.918      ;
+; 5.879 ; PROYECTO_MSS:inst|y.s7               ; reg_sostenimiento:inst51|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.918      ;
+; 5.879 ; PROYECTO_MSS:inst|y.s7               ; reg_sostenimiento:inst51|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 5.918      ;
+; 5.976 ; contador_6b:inst22|data_out[3]       ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.015      ;
+; 6.120 ; contador_6b:inst22|data_out[3]       ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.159      ;
+; 6.122 ; reg_sostenimiento:inst27|data_out[1] ; reg_sostenimiento:inst51|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.161      ;
+; 6.166 ; PROYECTO_MSS:inst|y.s21              ; PROYECTO_MSS:inst|y.s0               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.205      ;
+; 6.176 ; reg_sostenimiento:inst27|data_out[2] ; reg_sostenimiento:inst52|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.215      ;
+; 6.257 ; contador_6b:inst22|data_out[5]       ; reg_sostenimiento:inst27|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.296      ;
+; 6.289 ; contador_6b:inst22|data_out[4]       ; reg_sostenimiento:inst27|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.328      ;
+; 6.294 ; contador_6b:inst22|data_out[1]       ; reg_sostenimiento:inst27|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.333      ;
+; 6.299 ; reg_sostenimiento:inst18|data_out[7] ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.338      ;
+; 6.433 ; contador_6b:inst22|data_out[4]       ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.472      ;
+; 6.443 ; contador_6b:inst22|data_out[2]       ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.482      ;
+; 6.443 ; contador_6b:inst22|data_out[1]       ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.482      ;
+; 6.464 ; contador_6b:inst22|data_out[2]       ; reg_sostenimiento:inst27|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.503      ;
+; 6.543 ; contador_6b:inst22|data_out[3]       ; reg_sostenimiento:inst27|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.582      ;
+; 6.544 ; ANTIREBOTE:inst21|PB_SIN_REBOTE      ; PROYECTO_MSS:inst|y.s17              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.583      ;
+; 6.550 ; reg_sostenimiento:inst18|data_out[1] ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.589      ;
+; 6.551 ; reg_sostenimiento:inst18|data_out[5] ; PROYECTO_MSS:inst|y.s14              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.590      ;
+; 6.568 ; reg_sostenimiento:inst27|data_out[2] ; reg_sostenimiento:inst51|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.607      ;
+; 6.587 ; contador_6b:inst22|data_out[2]       ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.626      ;
+; 6.587 ; contador_6b:inst22|data_out[1]       ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.626      ;
+; 6.603 ; reg_sostenimiento:inst27|data_out[1] ; reg_sostenimiento:inst52|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.642      ;
+; 6.614 ; contador_6b:inst22|data_out[0]       ; reg_sostenimiento:inst27|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.653      ;
+; 6.642 ; reg_sostenimiento:inst27|data_out[4] ; reg_sostenimiento:inst51|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.681      ;
+; 6.654 ; PROYECTO_MSS:inst|y.s16              ; PROYECTO_MSS:inst|y.s19              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.693      ;
+; 6.731 ; contador_6b:inst22|data_out[2]       ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.770      ;
+; 6.731 ; contador_6b:inst22|data_out[1]       ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.770      ;
+; 6.732 ; reg_sostenimiento:inst51|data_out[5] ; PROYECTO_MSS:inst|y.s8               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.771      ;
+; 6.781 ; reg_sostenimiento:inst27|data_out[5] ; reg_sostenimiento:inst51|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.820      ;
+; 6.788 ; reg_sostenimiento:inst27|data_out[0] ; reg_sostenimiento:inst52|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.827      ;
+; 6.831 ; PROYECTO_MSS:inst|y.s14              ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.870      ;
+; 6.834 ; PROYECTO_MSS:inst|y.s6               ; reg_sostenimiento:inst27|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.873      ;
+; 6.839 ; PROYECTO_MSS:inst|y.s2               ; PROYECTO_MSS:inst|y.s3               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.878      ;
+; 6.863 ; delay_1seg:inst12|cnt[0]             ; PROYECTO_MSS:inst|y.s10              ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.580      ; 7.482      ;
+; 6.864 ; PROYECTO_MSS:inst|y.s15              ; PROYECTO_MSS:inst|y.s16              ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.903      ;
+; 6.871 ; PROYECTO_MSS:inst|y.s3               ; PROYECTO_MSS:inst|y.s4               ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.910      ;
+; 6.875 ; contador_6b:inst22|data_out[1]       ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.914      ;
+; 6.992 ; contador_6b:inst22|data_out[5]       ; reg_sostenimiento:inst27|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 7.031      ;
+; 6.997 ; reg_sostenimiento:inst27|data_out[6] ; reg_sostenimiento:inst52|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 7.036      ;
+; 7.024 ; contador_6b:inst22|data_out[4]       ; reg_sostenimiento:inst27|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 7.063      ;
++-------+--------------------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|clock_10hz_int'                                                                                                                                                                   ;
++-------+---------------------------------------+---------------------------------------+----------------------------------------+----------------------------------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node                               ; Launch Clock                           ; Latch Clock                            ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+---------------------------------------+----------------------------------------+----------------------------------------+--------------+------------+------------+
+; 3.445 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.484      ;
+; 3.449 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.488      ;
+; 3.449 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.488      ;
+; 3.789 ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.828      ;
+; 3.790 ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.829      ;
+; 3.817 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.856      ;
+; 3.828 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 3.867      ;
+; 4.425 ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 4.464      ;
+; 5.301 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 5.340      ;
+; 5.302 ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 5.341      ;
+; 5.320 ; CLOCK_DIV_10_MHz:inst11|count_1hz[1]  ; CLOCK_DIV_10_MHz:inst11|count_1hz[0]  ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 5.359      ;
+; 5.467 ; CLOCK_DIV_10_MHz:inst11|count_1hz[2]  ; CLOCK_DIV_10_MHz:inst11|clock_1hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int ; 0.000        ; 0.000      ; 5.506      ;
++-------+---------------------------------------+---------------------------------------+----------------------------------------+----------------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'                                                                                                                                    ;
++-------+--------------------------+--------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock                      ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+; 3.837 ; delay_1seg:inst12|cnt[0] ; delay_1seg:inst12|cnt[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 0.000        ; 0.000      ; 3.876      ;
+; 3.841 ; delay_1seg:inst12|cnt[0] ; delay_1seg:inst12|cnt[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 0.000        ; 0.000      ; 3.880      ;
+; 4.554 ; delay_1seg:inst12|cnt[1] ; delay_1seg:inst12|cnt[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 0.000        ; 0.000      ; 4.593      ;
++-------+--------------------------+--------------------------+-----------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'                                                                                                                                             ;
++--------+------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack  ; From Node              ; To Node                              ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; -8.228 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.907      ;
+; -8.228 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.907      ;
+; -8.228 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.907      ;
+; -8.228 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.907      ;
+; -8.228 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.907      ;
+; -8.228 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.907      ;
+; -8.001 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.680      ;
+; -8.001 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.680      ;
+; -8.001 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.680      ;
+; -7.911 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.590      ;
+; -7.911 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.590      ;
+; -7.911 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.590      ;
+; -7.911 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.590      ;
+; -7.911 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.590      ;
+; -7.911 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.590      ;
+; -7.888 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.567      ;
+; -7.888 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.567      ;
+; -7.886 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.565      ;
+; -7.886 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.565      ;
+; -7.886 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.565      ;
+; -7.886 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.565      ;
+; -7.886 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.565      ;
+; -7.886 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.565      ;
+; -7.857 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.536      ;
+; -7.857 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.536      ;
+; -7.760 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.439      ;
+; -7.760 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.439      ;
+; -7.760 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.439      ;
+; -7.760 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.439      ;
+; -7.760 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.439      ;
+; -7.760 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.439      ;
+; -7.376 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.055      ;
+; -7.376 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.055      ;
+; -7.376 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.055      ;
+; -7.376 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.055      ;
+; -7.376 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.055      ;
+; -7.376 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 8.055      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
+; -5.550 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 1.000        ; 0.000      ; 6.229      ;
++--------+------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Recovery: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'                                                                                                                                 ;
++--------+------------------------+--------------------------+-------------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack  ; From Node              ; To Node                  ; Launch Clock                        ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------+--------------------------+-------------------------------------+-----------------------------------+--------------+------------+------------+
+; -4.950 ; PROYECTO_MSS:inst|y.s6 ; delay_1seg:inst12|cnt[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 1.000        ; -0.580     ; 5.049      ;
+; -4.950 ; PROYECTO_MSS:inst|y.s6 ; delay_1seg:inst12|cnt[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 1.000        ; -0.580     ; 5.049      ;
++--------+------------------------+--------------------------+-------------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz'                                                                                                                                 ;
++-------+------------------------+--------------------------+-------------------------------------+-----------------------------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                  ; Launch Clock                        ; Latch Clock                       ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+--------------------------+-------------------------------------+-----------------------------------+--------------+------------+------------+
+; 5.590 ; PROYECTO_MSS:inst|y.s6 ; delay_1seg:inst12|cnt[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 0.000        ; -0.580     ; 5.049      ;
+; 5.590 ; PROYECTO_MSS:inst|y.s6 ; delay_1seg:inst12|cnt[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz ; 0.000        ; -0.580     ; 5.049      ;
++-------+------------------------+--------------------------+-------------------------------------+-----------------------------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removal: 'CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz'                                                                                                                                             ;
++-------+------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                              ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 6.190 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst27|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 6.229      ;
+; 8.016 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.055      ;
+; 8.016 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.055      ;
+; 8.016 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.055      ;
+; 8.016 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.055      ;
+; 8.016 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.055      ;
+; 8.016 ; PROYECTO_MSS:inst|y.s3 ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.055      ;
+; 8.400 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.439      ;
+; 8.400 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.439      ;
+; 8.400 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.439      ;
+; 8.400 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.439      ;
+; 8.400 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.439      ;
+; 8.400 ; PROYECTO_MSS:inst|y.s8 ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.439      ;
+; 8.497 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.536      ;
+; 8.497 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.536      ;
+; 8.526 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.565      ;
+; 8.526 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.565      ;
+; 8.526 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.565      ;
+; 8.526 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.565      ;
+; 8.526 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.565      ;
+; 8.526 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst42|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.565      ;
+; 8.528 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.567      ;
+; 8.528 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.567      ;
+; 8.551 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.590      ;
+; 8.551 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[1] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.590      ;
+; 8.551 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.590      ;
+; 8.551 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[3] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.590      ;
+; 8.551 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[4] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.590      ;
+; 8.551 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst51|data_out[5] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.590      ;
+; 8.641 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[6] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.680      ;
+; 8.641 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[0] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.680      ;
+; 8.641 ; PROYECTO_MSS:inst|y.s0 ; reg_sostenimiento:inst52|data_out[2] ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.680      ;
+; 8.868 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[5]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.907      ;
+; 8.868 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[3]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.907      ;
+; 8.868 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[4]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.907      ;
+; 8.868 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[1]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.907      ;
+; 8.868 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[0]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.907      ;
+; 8.868 ; PROYECTO_MSS:inst|y.s0 ; contador_6b:inst22|data_out[2]       ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 0.000        ; 0.000      ; 8.907      ;
++-------+------------------------+--------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                 ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; clock                                    ; clock                                    ; 0        ; 0        ; 0        ; 17       ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; clock                                    ; 0        ; 0        ; 0        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; clock                                    ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; clock                                    ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; 3        ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; 0        ; 0        ; 0        ; 12       ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; 6        ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; 1044     ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0        ; 0        ; 0        ; 11       ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                  ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; From Clock                               ; To Clock                                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+; clock                                    ; clock                                    ; 0        ; 0        ; 0        ; 17       ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; clock                                    ; 0        ; 0        ; 0        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; clock                                    ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; clock                                    ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; 3        ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; 0        ; 0        ; 0        ; 12       ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; 6        ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; 1044     ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; 0        ; 0        ; 0        ; 11       ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0        ; 0        ; 1        ; 1        ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; 0        ; 0        ; 0        ; 11       ;
++------------------------------------------+------------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                                                    ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; 2        ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 44       ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                                                     ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz   ; 2        ; 0        ; 0        ; 0        ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz ; 44       ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 14    ; 14   ;
+; Unconstrained Input Port Paths  ; 125   ; 125  ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 361   ; 361  ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                     ;
++------------------------------------------+------------------------------------------+------+-------------+
+; Target                                   ; Clock                                    ; Type ; Status      ;
++------------------------------------------+------------------------------------------+------+-------------+
+; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz        ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz      ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Khz_int   ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int   ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; CLOCK_DIV_10_MHz:inst11|clock_10Khz_int  ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; CLOCK_DIV_10_MHz:inst11|clock_10hz_int   ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; CLOCK_DIV_10_MHz:inst11|clock_100Khz_int ; Base ; Constrained ;
+; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; CLOCK_DIV_10_MHz:inst11|clock_100hz_int  ; Base ; Constrained ;
+; clock                                    ; clock                                    ; Base ; Constrained ;
++------------------------------------------+------------------------------------------+------+-------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                            ;
++---------------+--------------------------------------------------------------------------------------+
+; Input Port    ; Comment                                                                              ;
++---------------+--------------------------------------------------------------------------------------+
+; ADC_SENSOR[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; max           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; min           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; promedio      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; resetn        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; start         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; stop          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; LED         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OA          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OA16        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OB          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OB10        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OC          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OC11        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OD          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OD13        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OE          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OE12        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OF          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OF14        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OG          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OG15        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; co          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                            ;
++---------------+--------------------------------------------------------------------------------------+
+; Input Port    ; Comment                                                                              ;
++---------------+--------------------------------------------------------------------------------------+
+; ADC_SENSOR[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ADC_SENSOR[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; max           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; min           ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; promedio      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; resetn        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; start         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; stop          ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; LED         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OA          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OA16        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OB          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OB10        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OC          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OC11        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OD          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OD13        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OE          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OE12        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OF          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OF14        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OG          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; OG15        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; co          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+    Info: Processing started: Wed Feb 14 15:06:01 2018
+Info: Command: quartus_sta simulacion_1 -c simulacion_1
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'simulacion_1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock clock
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|clock_1Khz_int CLOCK_DIV_10_MHz:inst11|clock_1Khz_int
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|clock_10hz_int CLOCK_DIV_10_MHz:inst11|clock_10hz_int
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|clock_10Khz_int CLOCK_DIV_10_MHz:inst11|clock_10Khz_int
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|clock_100Khz_int CLOCK_DIV_10_MHz:inst11|clock_100Khz_int
+    Info (332105): create_clock -period 1.000 -name CLOCK_DIV_10_MHz:inst11|clock_100hz_int CLOCK_DIV_10_MHz:inst11|clock_100hz_int
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -18.605
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):   -18.605            -721.703 CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz 
+    Info (332119):    -5.823             -28.812 clock 
+    Info (332119):    -4.940             -17.755 CLOCK_DIV_10_MHz:inst11|clock_100Khz_int 
+    Info (332119):    -4.937             -18.642 CLOCK_DIV_10_MHz:inst11|clock_10Khz_int 
+    Info (332119):    -4.927             -18.444 CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int 
+    Info (332119):    -4.827             -17.356 CLOCK_DIV_10_MHz:inst11|clock_10hz_int 
+    Info (332119):    -4.665             -17.794 CLOCK_DIV_10_MHz:inst11|clock_100hz_int 
+    Info (332119):    -4.630             -18.068 CLOCK_DIV_10_MHz:inst11|clock_1Khz_int 
+    Info (332119):    -3.914              -7.111 CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz 
+Info (332146): Worst-case hold slack is -4.195
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.195              -4.195 CLOCK_DIV_10_MHz:inst11|clock_100Khz_int 
+    Info (332119):    -2.157              -4.314 clock 
+    Info (332119):    -2.121              -2.121 CLOCK_DIV_10_MHz:inst11|clock_1Khz_int 
+    Info (332119):    -0.733              -0.733 CLOCK_DIV_10_MHz:inst11|clock_10Khz_int 
+    Info (332119):    -0.449              -0.449 CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int 
+    Info (332119):    -0.309              -0.309 CLOCK_DIV_10_MHz:inst11|clock_100hz_int 
+    Info (332119):     3.257               0.000 CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz 
+    Info (332119):     3.445               0.000 CLOCK_DIV_10_MHz:inst11|clock_10hz_int 
+    Info (332119):     3.837               0.000 CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz 
+Info (332146): Worst-case recovery slack is -8.228
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -8.228            -238.493 CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz 
+    Info (332119):    -4.950              -9.900 CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz 
+Info (332146): Worst-case removal slack is 5.590
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     5.590               0.000 CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz 
+    Info (332119):     6.190               0.000 CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz 
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clock 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|CLOCK_100Hz 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|CLOCK_1Hz 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|clock_100Khz_int 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|clock_100hz_int 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|clock_10Khz_int 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|clock_10hz_int 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|clock_1Khz_int 
+    Info (332119):     0.161               0.000 CLOCK_DIV_10_MHz:inst11|clock_1Mhz_int 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 608 megabytes
+    Info: Processing ended: Wed Feb 14 15:06:02 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
